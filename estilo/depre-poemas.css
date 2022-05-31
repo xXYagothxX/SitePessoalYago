@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/*
+#9049E6
+#6705E0
+#5003AD
+#2D0261
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Playfair+Display:wght@500&family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: 'Old';
+    src: url('../fontes/Angel wish.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #9049E6;
+    --cor1: #6705E0;
+    --cor2: #5003AD;
+    --cor3: #2D0261;
+
+    --fonte-padrao: 'Ubuntu', Verdana, Arial, Helvetica, sans-serif;
+    --fonte-tattoo: 'Old', Verdana, Arial, Helvetica, sans-serif;
+    --fonte-cursiva:'Pacifico', cursive;
+    --fonte-destaque: 'Playfair Display', serif;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(42, 41, 41);
+    font-family: var(--fonte-padrao);
+}
+
+
+header {
+    background-color: black;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav {
+    background-color: rgb(42, 41, 41);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.322);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+
+nav > a:hover {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+main h1 {
+    font-family: var(--fonte-tattoo);
+    background-color: var(--cor3);
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2em;
+    border-radius: 2px;
+    text-indent: 8px;
+}
+
+main h2 {
+    font-family: var(--fonte-tattoo);
+    background-color: var(--cor2);
+    color: white;
+    font-size: 1.5em;
+    text-indent: 8px;
+    border-radius: 2px;
+}
+
+main p {
+    margin: 30px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    
+}
+
+main strong {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor2);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    background-color: var(--cor0);
+}
+
+main ol {
+    columns: 4;
+    padding: 30px;
+}
+
+li {
+    margin:0 0 5px 0;   
+ }
+
+main > article > span > p{
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+}
+
+aside {
+    background-color: rgb(177, 20, 20);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0px black;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+aside > h3 {
+    background-color: rgb(105, 5, 5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside a {
+    background-color: var(--cor2);
+}
+
+aside a:hover {
+    background-color: var(--cor2);
+}
+
+aside ol {
+    list-style-position: inside;
+    list-style-type: '\1F4BB';
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
